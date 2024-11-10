@@ -1,62 +1,62 @@
-# New App
+# رحلتك معنا
 
-New App is a ride-sharing application similar to Uber. It allows users to request rides, see available drivers, and track their ride status in real-time.
+رحلتك معنا هو تطبيق لمشاركة الركوب مشابه لأوبر. يتيح للمستخدمين طلب رحلات، رؤية السائقين المتاحين، وتتبع حالة رحلتهم في الوقت الحقيقي.
 
-## Features
+## الميزات
 
-1. **User Authentication**
-   - Users can sign in with ZAPT using email or social login providers like Google, Facebook, or Apple.
-   
-2. **Request a Ride**
-   - After signing in, users can enter their pickup and drop-off locations.
-   - Users can see an estimated fare and request a ride.
+1. **تسجيل الدخول**
+   - يمكن للمستخدمين تسجيل الدخول باستخدام ZAPT عبر البريد الإلكتروني أو موفري تسجيل الدخول الاجتماعي مثل جوجل، فيسبوك، أو آبل.
 
-3. **View Available Drivers**
-   - Users can view nearby available drivers on a map.
-   
-4. **Real-time Ride Tracking**
-   - Once a driver accepts the ride, users can track the driver's location in real-time.
-   - Users receive updates on the driver's estimated arrival time.
+2. **طلب رحلة**
+   - بعد تسجيل الدخول، يمكن للمستخدمين إدخال مواقع الالتقاء والوجهة.
+   - يمكن للمستخدمين رؤية الأجرة المقدرة وطلب رحلة.
 
-5. **Ride History**
-   - Users can view their past rides with details like date, time, fare, and route.
+3. **عرض السائقين المتاحين**
+   - يمكن للمستخدمين عرض السائقين المتاحين بالقرب منهم على الخريطة.
 
-6. **Profile Management**
-   - Users can view and edit their profile information.
+4. **تتبع الرحلة في الوقت الحقيقي**
+   - بمجرد قبول السائق للرحلة، يمكن للمستخدمين تتبع موقع السائق في الوقت الحقيقي.
+   - يتلقى المستخدمون تحديثات حول الوقت المتوقع لوصول السائق.
 
-## User Journey
+5. **سجل الرحلات**
+   - يمكن للمستخدمين عرض رحلاتهم السابقة مع تفاصيل مثل التاريخ، الوقت، الأجرة، والمسار.
 
-### 1. Sign In
+6. **إدارة الملف الشخصي**
+   - يمكن للمستخدمين عرض وتحرير معلومات ملفهم الشخصي.
 
-- **Step 1:** Open the app.
-- **Step 2:** Click on "Sign in with ZAPT".
-- **Step 3:** Choose to sign in via email, Google, Facebook, or Apple.
-- **Step 4:** Complete the authentication process and proceed to the home page.
+## رحلة المستخدم
 
-### 2. Requesting a Ride
+### 1. تسجيل الدخول
 
-- **Step 1:** On the home page, enter your pickup location.
-- **Step 2:** Enter your drop-off location.
-- **Step 3:** View the estimated fare.
-- **Step 4:** Click on "Request Ride".
+- **الخطوة 1:** افتح التطبيق.
+- **الخطوة 2:** انقر على "تسجيل الدخول مع ZAPT".
+- **الخطوة 3:** اختر تسجيل الدخول عبر البريد الإلكتروني، جوجل، فيسبوك، أو آبل.
+- **الخطوة 4:** أكمل عملية المصادقة وانتقل إلى الصفحة الرئيسية.
 
-### 3. Tracking Your Ride
+### 2. طلب رحلة
 
-- **Step 1:** After requesting, wait for a driver to accept.
-- **Step 2:** Once accepted, view the driver's location on the map.
-- **Step 3:** Receive notifications about the driver's arrival.
-- **Step 4:** After the ride starts, track the journey in real-time.
+- **الخطوة 1:** على الصفحة الرئيسية، أدخل موقع الالتقاء.
+- **الخطوة 2:** أدخل موقع الوجهة.
+- **الخطوة 3:** اعرض الأجرة المقدرة.
+- **الخطوة 4:** انقر على "طلب رحلة".
 
-### 4. Viewing Ride History
+### 3. تتبع رحلتك
 
-- **Step 1:** Navigate to your profile.
-- **Step 2:** Click on "Ride History".
-- **Step 3:** Browse through past rides and view details.
+- **الخطوة 1:** بعد الطلب، انتظر حتى يقبل السائق.
+- **الخطوة 2:** بمجرد القبول، اعرض موقع السائق على الخريطة.
+- **الخطوة 3:** تلقي إشعارات حول وصول السائق.
+- **الخطوة 4:** بعد بدء الرحلة، تتبع الرحلة في الوقت الحقيقي.
 
-## External APIs Used
+### 4. عرض سجل الرحلات
 
-- **Google Maps API:** For displaying maps and location tracking.
-- **Geolocation API:** To get the user's current location.
-- **Directions API:** For route details and fare estimation.
+- **الخطوة 1:** انتقل إلى ملفك الشخصي.
+- **الخطوة 2:** انقر على "سجل الرحلات".
+- **الخطوة 3:** تصفح الرحلات السابقة واعرض التفاصيل.
 
-Please ensure you have the necessary API keys for the external services listed above.
+## واجهات برمجة التطبيقات الخارجية المستخدمة
+
+- **واجهة Google Maps API:** لعرض الخرائط وتتبع الموقع.
+- **واجهة Geolocation API:** للحصول على الموقع الحالي للمستخدم.
+- **واجهة Directions API:** للحصول على تفاصيل المسار وتقدير الأجرة.
+
+يرجى التأكد من أن لديك مفاتيح API اللازمة للخدمات الخارجية المذكورة أعلاه.

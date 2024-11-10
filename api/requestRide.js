@@ -2,7 +2,6 @@ import { authenticateUser } from "./_apiUtils.js";
 import { rides } from '../drizzle/schema.js';
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
-import { eq } from 'drizzle-orm';
 
 export default async function handler(req, res) {
   try {

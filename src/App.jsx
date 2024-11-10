@@ -111,7 +111,7 @@ function App() {
       });
 
       if (response.ok) {
-        alert('Ride requested successfully!');
+        alert('تم طلب رحلتك بنجاح!');
         // Navigate to ride tracking page or reset form
       } else {
         console.error('Error requesting ride:', response.statusText);
@@ -135,7 +135,7 @@ function App() {
           <div class="flex items-center justify-center min-h-screen">
             <div class="w-full max-w-md p-8 bg-white rounded-xl shadow-lg">
               <h2 class="text-3xl font-bold mb-6 text-purple-600">
-                Sign in with ZAPT
+                تسجيل الدخول مع ZAPT
               </h2>
               <a
                 href="https://www.zapt.ai"
@@ -143,7 +143,7 @@ function App() {
                 rel="noopener noreferrer"
                 class="text-blue-500 hover:underline mb-6 block text-center"
               >
-                Learn more about ZAPT
+                تعرف على المزيد عن ZAPT
               </a>
               <Auth
                 supabaseClient={supabase}
@@ -160,38 +160,38 @@ function App() {
         <div class="max-w-4xl mx-auto">
           <div class="flex justify-between items-center mb-8">
             <h1 class="text-4xl font-bold text-purple-600 cursor-pointer">
-              New App
+              رحلتك معنا
             </h1>
             <button
               class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
               onClick={handleSignOut}
             >
-              Sign Out
+              تسجيل الخروج
             </button>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold mb-4 text-purple-600">
-              Request a Ride
+              طلب رحلة
             </h2>
             <div class="space-y-4">
               <input
                 type="text"
-                placeholder="Pickup Location"
+                placeholder="موقع الالتقاء"
                 value={pickupLocation()}
                 onInput={(e) => setPickupLocation(e.target.value)}
                 class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
               />
               <input
                 type="text"
-                placeholder="Drop-off Location"
+                placeholder="موقع الوجهة"
                 value={dropoffLocation()}
                 onInput={(e) => setDropoffLocation(e.target.value)}
                 class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
               />
               <Show when={fareEstimate()}>
                 <p class="text-gray-700">
-                  Estimated Fare: <span class="font-semibold">{fareEstimate()}</span>
+                  الأجرة المقدرة: <span class="font-semibold">{fareEstimate()}</span>
                 </p>
               </Show>
               <button
@@ -201,20 +201,20 @@ function App() {
                 }`}
                 disabled={loading()}
               >
-                {loading() ? 'Requesting...' : 'Request Ride'}
+                {loading() ? 'جاري الطلب...' : 'طلب رحلة'}
               </button>
             </div>
           </div>
 
           <div class="mt-8">
             <h2 class="text-2xl font-bold mb-4 text-purple-600">
-              Nearby Drivers
+              السائقون القريبون
             </h2>
             <button
               onClick={fetchDrivers}
               class="mb-4 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
             >
-              {loading() ? 'Loading...' : 'Fetch Drivers'}
+              {loading() ? 'جاري التحميل...' : 'عرض السائقين'}
             </button>
             <Map drivers={drivers()} />
           </div>

@@ -1,5 +1,4 @@
 import { authenticateUser } from "./_apiUtils.js";
-import { createClient } from '@supabase/supabase-js';
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
@@ -19,8 +18,8 @@ export default async function handler(req, res) {
 
     // Fetch nearby drivers (mocked for simplicity)
     const drivers = [
-      { id: 1, name: 'Driver A', latitude: latitude - 0.01, longitude: longitude + 0.01 },
-      { id: 2, name: 'Driver B', latitude: latitude + 0.02, longitude: longitude - 0.02 },
+      { id: 1, name: 'Driver A', latitude: parseFloat(latitude) - 0.01, longitude: parseFloat(longitude) + 0.01 },
+      { id: 2, name: 'Driver B', latitude: parseFloat(latitude) + 0.02, longitude: parseFloat(longitude) - 0.02 },
     ];
 
     res.status(200).json(drivers);
